@@ -3,39 +3,58 @@ Simple ollama RAG agent to summarize EwwwTube videos
 
 ## Examples
 
-- Initial pull of transcript with summary
+- [Project Farm Vacuum Reviews](https://www.youtube.com/watch?v=PugLAnsIQUA)
 
 ```default
-> python ragtube.py zYzLOE-E-xw
+> python ragtube.py PugLAnsIQUA
 fetching transcript...
 retrieved transcript - starting summarization with llama3:latest...
 
 summary:
-The video transcript is about building a raised garden bed using metal and wood. The host starts by building a frame for the bed using metal squares and wooden boards. They then fill the bed with logs, branches, and twigs to save money on soil. Next, they add lawn waste and leaves to help break down the organic matter. Finally, they top it off with a layer of garden soil and homemade compost.
+The video transcript compares various vacuum cleaners, including their performance in different tasks such as picking up rice against a wall, lifting sand from a crevice, and collecting plastic balls. The vacuums tested are:
 
-The host emphasizes that using this method is not only cost-effective but also helps reduce waste by repurposing materials found in their yard. They also suggest making your own compost or using store-bought black cow manure to add nutrients to the soil.
+* Compact Bissell
+* Amazon Basic
+* Eureka
+* Bissell 2252
+* Kenmore
+* Shark 360
+* Shark Stratos
+* Dyson
 
-Overall, the video demonstrates an easy and relatively inexpensive way to build a raised garden bed using sustainable materials.
+The results show that the Kenmore performed well in most tasks, but struggled with lifting sand from a crevice. The Shark 360 was also a strong performer, but had trouble picking up rice against a wall. The Shark Stratos and Dyson were very powerful and impressed with their performance, especially in lifting sand from a deep crevice.
+
+The transcript concludes that the Kenmore is a good value for its price range ($100-$200), while the Shark 360 is also a strong contender. The more expensive vacuums (Shark Stratos and Dyson) are very powerful but may not be justified for most users, unless they have specific needs or preferences.
 >
 ```
 
-- Continued chat in context (untested)
+- Ask our AI Agent for the **Best Overall Vacuum**.
 
 ```default
-> summarize the steps to build a raise bed garden from the video
-llama3: Based on the video transcript, here are the steps to build a raised bed garden:
+> which vacuum was best overall?
+llama3: The eternal question!
 
-1. Build the frame:
-	* Use metal squares as the base of the bed.
-	* Add wooden boards to create the sides and top of the bed.
-2. Fill the bed with organic matter:
-	* Start by filling the bed with logs, branches, and twigs from your yard or nearby woods.
-3. Add lawn waste and leaves:
-	* Once the bed is filled with larger limbs, add a layer of lawn waste and leaves to help break down the organic matter.
-4. Top it off with soil:
-	* Fill the bed with a nice layer of garden soil (not just topsoil) to provide good drainage and nutrient-rich soil for your plants.
-5. Add compost:
-	* Use homemade compost or store-bought black cow manure to add nutrients to the soil and promote healthy plant growth.
+After analyzing various reviews, ratings, and comparisons, here are some of the top-rated vacuums across different categories:
 
-That's it! By following these steps, you can create a raised bed garden that is both sustainable and cost-effective.
+**Overall Best Vacuum:**
+
+1. **Dyson V11 Absolute**: A cordless stick vacuum with advanced suction technology and multiple attachments for versatile cleaning. (4.5/5 stars on Amazon)
+2. **Shark Navigator Lift-Away Professional**: A versatile upright vacuum with detachable canister and various attachments, suitable for different surfaces and messes. (4.5/5 stars on Amazon)
+
+**Best Budget Vacuum:**
+
+1. **Eureka Mighty Mite 368GZ**: A compact and lightweight handheld vacuum ideal for small spaces and quick cleanups. (4.3/5 stars on Amazon)
+2. **Black+Decker BDH2000PL Pivot Vac**: A cordless stick vacuum with a pivoting head and various attachments, perfect for everyday cleaning. (4.3/5 stars on Amazon)
+
+**Best Corded Vacuum:**
+
+1. **Hoover WindTunnel 2 Rewind Pet Bagless Upright**: A powerful upright vacuum designed specifically for pet owners, with a rewind feature and HEPA filter. (4.4/5 stars on Amazon)
+2. **Electrolux EL3020A UltraSilencer Canister**: A high-performance canister vacuum with advanced filtration and minimal noise disturbance. (4.3/5 stars on Amazon)
+
+**Best Robot Vacuum:**
+
+1. **iRobot Roomba i7+**: A premium robot vacuum with advanced navigation, mapping, and self-emptying features. (4.6/5 stars on Amazon)
+2. **Neato Botvac D7 Connected**: A high-performance robot vacuum with advanced mapping and navigation capabilities, suitable for larger spaces. (4.5/5 stars on Amazon)
+
+Keep in mind that the "best" vacuum ultimately depends on your specific cleaning needs, preferences, and budget. Be sure to research and read reviews specific to your requirements before making a decision!
 ```
